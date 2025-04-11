@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "OGOTjK35iKyvYwoa+TdyDIkY5uftzAKUkymx1eQBzxY=",
+  "Source": "TransportQuotation-Service",
+  "BasePath": "_content/TransportQuotation-Service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

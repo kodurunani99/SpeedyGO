@@ -1,0 +1,50 @@
+[
+  {
+    "ContainingType": "EmailSender.Controllers.EmailController",
+    "Method": "RequestOtp",
+    "RelativePath": "api/Email/request-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EmailSender.Models.EmailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmailSender.Controllers.EmailController",
+    "Method": "SetPassword",
+    "RelativePath": "api/Email/set-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EmailSender.Models.SetPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmailSender.Controllers.EmailController",
+    "Method": "ValidateOtp",
+    "RelativePath": "api/Email/validate-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EmailSender.Models.OtpValidationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

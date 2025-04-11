@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "TrdC7dZZwrV/eia3Nmf0sFsEE8ibvMc+U63oVyWfy80=",
+  "Source": "Account-Service",
+  "BasePath": "_content/Account-Service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Kodurunani\\OneDrive - Happiest Minds Technologies Limited\\Desktop\\Project\\speedygo-capstone-project\\BackEnd\\SpeedyGoBakend\\EmailSender\\EmailSender.csproj",
+      "Version": 2,
+      "Source": "EmailSender",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1FBA7E9-AFAB-48CA-B8F5-3C8E13FE3157}|CustomerServiceRequest\\CustomerServiceRequest.csproj|c:\\users\\productivitytool\\desktop\\speedygobakend\\customerservicerequest\\servicerequestrepository\\servicerequestrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1FBA7E9-AFAB-48CA-B8F5-3C8E13FE3157}|CustomerServiceRequest\\CustomerServiceRequest.csproj|solutionrelative:customerservicerequest\\servicerequestrepository\\servicerequestrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1FBA7E9-AFAB-48CA-B8F5-3C8E13FE3157}|CustomerServiceRequest\\CustomerServiceRequest.csproj|c:\\users\\productivitytool\\desktop\\speedygobakend\\customerservicerequest\\controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1FBA7E9-AFAB-48CA-B8F5-3C8E13FE3157}|CustomerServiceRequest\\CustomerServiceRequest.csproj|solutionrelative:customerservicerequest\\controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1FBA7E9-AFAB-48CA-B8F5-3C8E13FE3157}|CustomerServiceRequest\\CustomerServiceRequest.csproj|c:\\users\\productivitytool\\desktop\\speedygobakend\\customerservicerequest\\models\\employeedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1FBA7E9-AFAB-48CA-B8F5-3C8E13FE3157}|CustomerServiceRequest\\CustomerServiceRequest.csproj|solutionrelative:customerservicerequest\\models\\employeedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1FBA7E9-AFAB-48CA-B8F5-3C8E13FE3157}|CustomerServiceRequest\\CustomerServiceRequest.csproj|c:\\users\\productivitytool\\desktop\\speedygobakend\\customerservicerequest\\services\\servicerequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1FBA7E9-AFAB-48CA-B8F5-3C8E13FE3157}|CustomerServiceRequest\\CustomerServiceRequest.csproj|solutionrelative:customerservicerequest\\services\\servicerequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55448ACA-3A89-4344-9BED-B03266F2E198}|Testing\\Testing.csproj|c:\\users\\productivitytool\\desktop\\speedygobakend\\testing\\accounttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55448ACA-3A89-4344-9BED-B03266F2E198}|Testing\\Testing.csproj|solutionrelative:testing\\accounttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1E8E61-3109-43DE-A868-ED6F8FD5B0FB}|EmailSender\\EmailSender.csproj|c:\\users\\productivitytool\\desktop\\speedygobakend\\emailsender\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1E8E61-3109-43DE-A868-ED6F8FD5B0FB}|EmailSender\\EmailSender.csproj|solutionrelative:emailsender\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1E8E61-3109-43DE-A868-ED6F8FD5B0FB}|EmailSender\\EmailSender.csproj|c:\\users\\productivitytool\\desktop\\speedygobakend\\emailsender\\models\\otprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1E8E61-3109-43DE-A868-ED6F8FD5B0FB}|EmailSender\\EmailSender.csproj|solutionrelative:emailsender\\models\\otprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD4AC6FC-93C3-4F0C-9D22-E75A18A7EB3A}|Account-Service\\Account-Service.csproj|c:\\users\\productivitytool\\desktop\\speedygobakend\\account-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD4AC6FC-93C3-4F0C-9D22-E75A18A7EB3A}|Account-Service\\Account-Service.csproj|solutionrelative:account-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1E8E61-3109-43DE-A868-ED6F8FD5B0FB}|EmailSender\\EmailSender.csproj|c:\\users\\productivitytool\\desktop\\speedygobakend\\emailsender\\models\\smtpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1E8E61-3109-43DE-A868-ED6F8FD5B0FB}|EmailSender\\EmailSender.csproj|solutionrelative:emailsender\\models\\smtpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceRequestRepo.cs",
+              "DocumentMoniker": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\CustomerServiceRequest\\ServiceRequestRepository\\ServiceRequestRepo.cs",
+              "RelativeDocumentMoniker": "CustomerServiceRequest\\ServiceRequestRepository\\ServiceRequestRepo.cs",
+              "ToolTip": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\CustomerServiceRequest\\ServiceRequestRepository\\ServiceRequestRepo.cs",
+              "RelativeToolTip": "CustomerServiceRequest\\ServiceRequestRepository\\ServiceRequestRepo.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAYwPIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T08:47:16.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceRequestController.cs",
+              "DocumentMoniker": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\CustomerServiceRequest\\Controllers\\ServiceRequestController.cs",
+              "RelativeDocumentMoniker": "CustomerServiceRequest\\Controllers\\ServiceRequestController.cs",
+              "ToolTip": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\CustomerServiceRequest\\Controllers\\ServiceRequestController.cs",
+              "RelativeToolTip": "CustomerServiceRequest\\Controllers\\ServiceRequestController.cs",
+              "ViewState": "AgIAACsAAAAAl5mZmVktwM8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T08:16:53.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeDetails.cs",
+              "DocumentMoniker": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\CustomerServiceRequest\\Models\\EmployeeDetails.cs",
+              "RelativeDocumentMoniker": "CustomerServiceRequest\\Models\\EmployeeDetails.cs",
+              "ToolTip": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\CustomerServiceRequest\\Models\\EmployeeDetails.cs",
+              "RelativeToolTip": "CustomerServiceRequest\\Models\\EmployeeDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T08:14:24.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountTests.cs",
+              "DocumentMoniker": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\Testing\\AccountTests.cs",
+              "RelativeDocumentMoniker": "Testing\\AccountTests.cs",
+              "ToolTip": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\Testing\\AccountTests.cs",
+              "RelativeToolTip": "Testing\\AccountTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T09:24:03.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\CustomerServiceRequest\\Services\\ServiceRequestService.cs",
+              "RelativeDocumentMoniker": "CustomerServiceRequest\\Services\\ServiceRequestService.cs",
+              "ToolTip": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\CustomerServiceRequest\\Services\\ServiceRequestService.cs",
+              "RelativeToolTip": "CustomerServiceRequest\\Services\\ServiceRequestService.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAADwv44AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T06:31:18.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmailController.cs",
+              "DocumentMoniker": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\EmailSender\\Controllers\\EmailController.cs",
+              "RelativeDocumentMoniker": "EmailSender\\Controllers\\EmailController.cs",
+              "ToolTip": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\EmailSender\\Controllers\\EmailController.cs",
+              "RelativeToolTip": "EmailSender\\Controllers\\EmailController.cs",
+              "ViewState": "AgIAACcAAACAMjMzMzMmwAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T06:23:37.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SmtpSettings.cs",
+              "DocumentMoniker": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\EmailSender\\Models\\SmtpSettings.cs",
+              "RelativeDocumentMoniker": "EmailSender\\Models\\SmtpSettings.cs",
+              "ToolTip": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\EmailSender\\Models\\SmtpSettings.cs",
+              "RelativeToolTip": "EmailSender\\Models\\SmtpSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T04:57:07.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OtpRequest.cs",
+              "DocumentMoniker": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\EmailSender\\Models\\OtpRequest.cs",
+              "RelativeDocumentMoniker": "EmailSender\\Models\\OtpRequest.cs",
+              "ToolTip": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\EmailSender\\Models\\OtpRequest.cs",
+              "RelativeToolTip": "EmailSender\\Models\\OtpRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T04:46:07.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\Account-Service\\Program.cs",
+              "RelativeDocumentMoniker": "Account-Service\\Program.cs",
+              "ToolTip": "C:\\Users\\productivityTool\\Desktop\\SpeedyGoBakend\\Account-Service\\Program.cs",
+              "RelativeToolTip": "Account-Service\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T06:34:39.597Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

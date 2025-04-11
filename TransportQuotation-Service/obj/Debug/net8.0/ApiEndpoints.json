@@ -1,0 +1,415 @@
+[
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "CreateQuotation",
+    "RelativePath": "api/Quotation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ServiceName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TransporterPhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TransporterLocation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VehicleNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LicenseNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VehicleCategory",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VehicleCapacityInTons",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VehicleHeightInFeet",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VehicleWidthInFeet",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VehicleModel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PricePerKm",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TransporterEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TransporterName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProductImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "UpdateQuotation",
+    "RelativePath": "api/Quotation/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "quotation",
+        "Type": "Quotation_Service.Models.Quotation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "DeleteQuotation",
+    "RelativePath": "api/Quotation/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "GetAdminQuotations",
+    "RelativePath": "api/Quotation/admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quotation_Service.Models.Quotation, TransportQuotation-Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "GetAdminQuotation",
+    "RelativePath": "api/Quotation/admin/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quotation_Service.Models.Quotation",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "ApproveQuotation",
+    "RelativePath": "api/Quotation/admin/{id}/approve",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "RejectQuotation",
+    "RelativePath": "api/Quotation/admin/{id}/reject",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "GetAllAdminQuotationsDto",
+    "RelativePath": "api/Quotation/admin/dto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TransportQuotation_Service.Models.DTO.QuotationDto, TransportQuotation-Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "GetApprovedQuotations",
+    "RelativePath": "api/Quotation/approved",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quotation_Service.Models.Quotation, TransportQuotation-Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "GetApprovedQuotationsByLargeCategory",
+    "RelativePath": "api/Quotation/category/large/approved",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quotation_Service.Models.Quotation, TransportQuotation-Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "GetQuotationsByMediumCategory",
+    "RelativePath": "api/Quotation/category/medium",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quotation_Service.Models.Quotation, TransportQuotation-Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "GetApprovedQuotationsByMediumCategory",
+    "RelativePath": "api/Quotation/category/medium/approved",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quotation_Service.Models.Quotation, TransportQuotation-Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "GetApprovedQuotationsBySmallCategory",
+    "RelativePath": "api/Quotation/category/small/approved",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quotation_Service.Models.Quotation, TransportQuotation-Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "GetCustomerQuotationsDto",
+    "RelativePath": "api/Quotation/customer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TransportQuotation_Service.Models.DTO.QuotationDto, TransportQuotation-Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "GetCustomerQuotationDtoById",
+    "RelativePath": "api/Quotation/customer/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TransportQuotation_Service.Models.DTO.QuotationDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "GetPendingQuotations",
+    "RelativePath": "api/Quotation/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quotation_Service.Models.Quotation, TransportQuotation-Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quotation_Service.Controllers.QuotationController",
+    "Method": "GetQuotationsByTransporterEmailId",
+    "RelativePath": "api/Quotation/transporter/{transporterEmailId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transporterEmailId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quotation_Service.Models.Quotation, TransportQuotation-Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

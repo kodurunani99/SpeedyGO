@@ -1,0 +1,31 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Account-Service\\Account-Service.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TransportQuotation-Service\\TransportQuotation-Service.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "CustomerServiceRequest\\CustomerServiceRequest.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "EmailSender\\EmailSender.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Api-Gateway\\Api-Gateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Feedback\\Feedback.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

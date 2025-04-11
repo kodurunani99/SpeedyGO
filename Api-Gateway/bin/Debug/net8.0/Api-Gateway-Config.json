@@ -1,0 +1,469 @@
+{
+  "Routes": [
+    // Configure gateway for account registration
+    // Existing account routes
+
+    {
+      // DownstreamPathTemplate defines the path to the actual API endpoint that this gateway forwards requests to
+      "DownstreamPathTemplate": "/api/account/register",
+
+      // DownstreamSchema specifies the protocol used for the downstream service (http or https)
+      "DownstreamSchema": "https",
+
+      // DownstreamHostAndPorts is an array specifying the host and port of the downstream service (the actual service to forward requests to)
+      "DownstreamHostAndPorts": [
+        {
+          // Host is the hostname or IP address of the downstream service
+          "Host": "localhost",
+
+          // Port is the port number where the downstream service is running
+          "Port": 7070
+        }
+      ],
+
+      // UpstreamPathTemplate specifies the path on the API Gateway that users will use to access the service
+      "UpstreamPathTemplate": "/gateway/account/register",
+
+      // UpstreamHttpMethod defines the allowed HTTP methods for the upstream request (in this case, POST)
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+,
+    {
+      "DownstreamPathTemplate": "/api/account/login",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7070
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/account/login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+
+    {
+      "DownstreamPathTemplate": "/api/account/users",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7070
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/account/users",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/account/users/{id}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7070
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/account/users/{id}",
+      "UpstreamHttpMethods": [ "Get", "Put", "Delete" ] // Combined methods
+    },
+    // Configure gateway for getting a user by ID
+
+    // Configure gateway for deleting a user
+
+
+    // Configure gateway for updating a user
+    {
+      "DownstreamPathTemplate": "/api/account/users/update",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7070
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/account/users/update",
+      "UpstreamHttpMethods": [ "Put" ]
+    },
+    // Configure gateway for getting all transporters
+    {
+      "DownstreamPathTemplate": "/api/account/transporters",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7070
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/account/transporters",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    // Configure gateway for getting all customers
+    {
+      "DownstreamPathTemplate": "/api/account/AllCustomers",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7070
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/account/AllCustomers",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    // Configure gateway for getting all admin quotations
+    {
+      "DownstreamPathTemplate": "/api/quotation/admin",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation/admin",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    // Configure gateway for getting all admin quotations DTO
+    {
+      "DownstreamPathTemplate": "/api/quotation/admin/dto",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation/admin/dto",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    // Configure gateway for getting an admin quotation by ID
+    {
+      "DownstreamPathTemplate": "/api/quotation/admin/{id}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation/admin/{id}",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    // Configure gateway for getting customer quotations DTO
+    {
+      "DownstreamPathTemplate": "/api/quotation/customer",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation/customer",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    // Configure gateway for getting a customer quotation DTO by ID
+    {
+      "DownstreamPathTemplate": "/api/quotation/customer/{id}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation/customer/{id}",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    // Configure gateway for creating a quotation
+    {
+      "DownstreamPathTemplate": "/api/quotation",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation",
+      "UpstreamHttpMethods": [ "Post" ]
+    },
+    // Configure gateway for updating a quotation
+    {
+      "DownstreamPathTemplate": "/api/quotation/{id}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation/{id}",
+      "UpstreamHttpMethods": [ "Put", "Delete" ]
+    },
+    // Configure gateway for deleting a quotation
+
+    // Configure gateway for approving a quotation
+    {
+      "DownstreamPathTemplate": "/api/quotation/admin/{id}/approve",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation/admin/{id}/approve",
+      "UpstreamHttpMethods": [ "Put" ]
+    },
+    // Configure gateway for rejecting a quotation
+    {
+      "DownstreamPathTemplate": "/api/quotation/admin/{id}/reject",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation/admin/{id}/reject",
+      "UpstreamHttpMethods": [ "Put" ]
+    },
+    // Configure gateway for getting quotations by transporter email ID
+    {
+      "DownstreamPathTemplate": "/api/quotation/transporter/{transporterEmailId}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation/transporter/{transporterEmailId}",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    // Configure gateway for getting approved quotations by small category
+    {
+      "DownstreamPathTemplate": "/api/quotation/category/small/approved",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation/category/small/approved",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    // Configure gateway for getting quotations by medium category
+    {
+      "DownstreamPathTemplate": "/api/quotation/category/medium",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation/category/medium",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    // Configure gateway for getting approved quotations by large category
+    {
+      "DownstreamPathTemplate": "/api/quotation/category/large/approved",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/quotation/category/large/approved",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+
+    // Configure gateway for getting approved quotations
+
+
+    {
+      "DownstreamPathTemplate": "/api/serviceRequest",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/serviceRequest",
+      "UpstreamHttpMethods": [ "Get", "Post" ]
+    },
+    // Configure gateway for getting a service request by ID
+    {
+      "DownstreamPathTemplate": "/api/serviceRequest/{id}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/serviceRequest/{id}",
+      "UpstreamHttpMethods": [ "Get", "Put", "Delete" ]
+    },
+    // Configure gateway for adding a new service request
+
+    // Configure gateway for updating an existing service request
+
+    // Configure gateway for deleting a service request by ID
+
+    // Configure gateway for getting service requests by customer ID
+    {
+      "DownstreamPathTemplate": "/api/serviceRequest/customer/{customerId}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/serviceRequest/customer/{customerId}",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    // Configure gateway for getting service requests by transporter ID
+    {
+      "DownstreamPathTemplate": "/api/serviceRequest/transporter/{transporterId}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/serviceRequest/transporter/{transporterId}",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    // Configure gateway for getting service requests by transporter email
+    {
+      "DownstreamPathTemplate": "/api/ServiceRequest/transporterEmail/{transporterEmailId}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/serviceRequest/transporterEmail/{transporterEmailId}",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ServiceRequest/Accepted/transporterEmail/{transporterEmailId}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ServiceRequest/Accepted/transporterEmail/{transporterEmailId}",
+      "UpstreamHttpMethods": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/serviceRequest/{id}/accept",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/serviceRequest/{id}/accept",
+      "UpstreamHttpMethods": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/serviceRequest/{id}/reject",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/serviceRequest/{id}/reject",
+      "UpstreamHttpMethods": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/serviceRequest/approved",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/serviceRequest/approved",
+      "UpstreamHttpMethods": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/serviceRequest/pending",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/serviceRequest/pending",
+      "UpstreamHttpMethods": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/serviceRequest/rejected",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7072
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/serviceRequest/rejected",
+      "UpstreamHttpMethods": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/feedback",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7073
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/feedback",
+      "UpstreamHttpMethods": [ "POST", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/feedback/user/{userId}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7073
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/feedback/user/{userId}",
+      "UpstreamHttpMethods": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/feedback/transporter/{transporterId}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7073
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/feedback/transporter/{transporterId}",
+      "UpstreamHttpMethods": [ "GET" ]
+    }
+
+
+  ]
+}

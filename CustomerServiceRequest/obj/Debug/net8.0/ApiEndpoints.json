@@ -1,0 +1,207 @@
+[
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "GetAllServiceRequests",
+    "RelativePath": "api/ServiceRequest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "AddServiceRequest",
+    "RelativePath": "api/ServiceRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceRequestDto",
+        "Type": "CustomerServiceRequest.Models.DTO.ServiceRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "GetServiceRequestById",
+    "RelativePath": "api/ServiceRequest/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "UpdateServiceRequest",
+    "RelativePath": "api/ServiceRequest/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "serviceRequest",
+        "Type": "CustomerServiceRequest.Models.ServiceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "DeleteServiceRequest",
+    "RelativePath": "api/ServiceRequest/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "AcceptServiceRequest",
+    "RelativePath": "api/ServiceRequest/{id}/accept",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "RejectServiceRequest",
+    "RelativePath": "api/ServiceRequest/{id}/reject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "GetAcceptedServiceRequestsByTransporterEmail",
+    "RelativePath": "api/ServiceRequest/Accepted/transporterEmail/{transporterEmailId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transporterEmailId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "GetAllApprovedServiceRequests",
+    "RelativePath": "api/ServiceRequest/approved",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "GetServiceRequestsByCustomerId",
+    "RelativePath": "api/ServiceRequest/customer/{customerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "GetAllPendingServiceRequests",
+    "RelativePath": "api/ServiceRequest/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "GetAllRejectedServiceRequests",
+    "RelativePath": "api/ServiceRequest/rejected",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "GetServiceRequestsByTransporterId",
+    "RelativePath": "api/ServiceRequest/transporter/{transporterId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transporterId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceRequest.Controllers.ServiceRequestController",
+    "Method": "GetServiceRequestsByTransporterEmail",
+    "RelativePath": "api/ServiceRequest/transporterEmail/{transporterEmailId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transporterEmailId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

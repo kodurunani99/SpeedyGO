@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "tsC6N3Smo0f3onpqakRCDKJOj2Fp4q/ECbiOV44bETA=",
+  "Source": "CustomerServiceRequest",
+  "BasePath": "_content/CustomerServiceRequest",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
