@@ -238,5 +238,53 @@ namespace CustomerServiceRequest.ServiceRequestRepository
                 throw new Exception("An error occurred while retrieving rejected service requests.", ex);
             }
         }
+
+        public async Task DeleteServiceRequestByCustomerId(string customerId)
+        {
+            try
+            {
+                var serviceRequests = await _dbContext.ServiceRequests
+                    .Where(sr => sr.CustomerId == customerId)
+                    .ToListAsync();
+
+                if (!serviceRequests.Any())
+                {
+                    throw new ArgumentException($"No service requests found for customer ID {customerId}.", nameof(customerId));
+                }
+
+                _dbContext.ServiceRequests.RemoveRange(serviceRequests);
+                await Save();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred while deleting service requests by customer ID.", ex);
+            }
+        }
+
+        public async Task CancelServiceRequest(int requestId)
+        {
+            try
+            {
+                var serviceRequest = await GetServiceRequestById(requestId);
+                if (serviceRequest == null)
+                {
+                    throw new ArgumentException($"Service request with ID {requestId} does not exist.", nameof(requestId));
+                }
+
+                if (serviceRequest.Status != ServiceReqStatus.Pending)
+                {
+                    throw new InvalidOperationException("Only pending requests can be cancelled.");
+                }
+
+                serviceRequest.Status = ServiceReqStatus.Rejected;
+
+                _dbContext.ServiceRequests.Update(serviceRequest);
+                await Save();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred while cancelling the service request.", ex);
+            }
+        }
     }
 }
